@@ -1,31 +1,45 @@
-# Virtual Environment
-venv/
-.env/
+# Python
 
-# Python cache
-__pycache__/
+**pycache**/
 *.pyc
 *.pyo
 *.pyd
+*.log
+
+# Virtual Environment
+
+venv/
+.env/
 
 # Environment variables
+
 .env
-.env.*
+
+# FAISS vector database (can be large)
+
+db/
+*.faiss
+*.pkl
+
+# HuggingFace cache
+
+.cache/
+huggingface/
 
 # OS files
+
 .DS_Store
 Thumbs.db
 
-# VS Code
+# VS Code settings
+
 .vscode/
 
-# Logs
-*.log
-
 # Jupyter
+
 .ipynb_checkpoints/
 
-# FAISS / Vector DB files (if you create them later)
-*.faiss
-*.pkl
-vectorstore/
+# Temporary files
+
+*.tmp
+*.temp
